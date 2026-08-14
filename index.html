@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The blog is live</title>
+<style>
+  :root{
+    --bg:#0a0a0a;
+    --orange:#ff9933;
+    --cream:#fff3d6;
+    --butter:#ffd98a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:var(--bg);
+    color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display:flex;align-items:center;justify-content:center;
+    min-height:100vh;padding:24px;text-align:center;
+  }
+  .card{max-width:520px}
+  .icon{width:72px;height:72px;margin:0 auto 28px;display:block}
+  .icon circle,.icon path{
+    fill:none;stroke:var(--orange);stroke-width:2.5;
+    stroke-linecap:round;stroke-linejoin:round;
+  }
+  h1{font-size:1.9rem;color:var(--butter);margin-bottom:14px;letter-spacing:-0.01em}
+  p{font-size:1.05rem;line-height:1.6;color:var(--cream);opacity:.85;margin-bottom:10px}
+  .url{color:var(--orange);font-weight:600}
+  .note{margin-top:26px;font-size:.85rem;opacity:.5}
+</style>
+</head>
+<body>
+  <div class="card">
+    <svg class="icon" viewBox="0 0 48 48" aria-hidden="true">
+      <circle cx="24" cy="24" r="21"/>
+      <path d="M15 24.5 L21.5 31 L34 18"/>
+    </svg>
+    <h1>The blog is live</h1>
+    <p>GitHub Pages is serving this page at <span class="url">blog.thecubbystop.com</span>. The publishing pipeline works.</p>
+    <p class="note">Placeholder page. The Blog Builder will replace this with your real landing page and posts.</p>
+  </div>
+</body>
+</html>
